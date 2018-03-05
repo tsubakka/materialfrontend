@@ -1,0 +1,32 @@
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding:0;
+    border: 0px solid #555;
+    padding-top:65px !important;
+}
+
+.app-sidenav{
+    padding-top:65px !important;   
+    height:calc(100vh-65px);
+    overflow:hidden;
+    
+}
+.app-sidenav-normal{
+    width:230px;
+}
+.app-sidenav-mini{
+    width:62px;
+}
+.sidenav-footer{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+.sidenav-footer-btn{
+    float:right;
+    margin:5px;
+    margin-right:13px
+}
