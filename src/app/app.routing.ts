@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-//import { AuthGuard } from './guards/index';
+// import { AuthGuard } from './guards/index';
 
 
 // Import Containers
-//import {
+// import {
 //  FullLayoutComponent,
 //  SimpleLayoutComponent
-//} from './containers';
+// } from './containers';
 
 export const routes: Routes = [
   {
@@ -23,7 +23,7 @@ export const routes: Routes = [
       title: 'Home'
     },
     children: [
-      {
+     /* {
         path: 'base',
         loadChildren: './views/base/base.module#BaseModule'
       },
@@ -34,12 +34,12 @@ export const routes: Routes = [
       {
         path: 'charts',
         loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
-      },
+      },*/
       {
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
       },
-      {
+     /* {
         path: 'icons',
         loadChildren: './views/icons/icons.module#IconsModule'
       },
@@ -58,10 +58,10 @@ export const routes: Routes = [
       {
         path: 'widgets',
         loadChildren: './views/widgets/widgets.module#WidgetsModule'
-      }
+      }*/
     ]
   },
-  {
+ /* {
     path: 'pages',
     // component: SimpleLayoutComponent,
     data: {
@@ -74,8 +74,9 @@ export const routes: Routes = [
       }
     ]
   },
-
-  { path: '**', redirectTo: '' }
+*/
+  { path: '*', redirectTo: '/dashboard' },
+  { path: '**', redirectTo: '/dashboard' }
 
 ];
 

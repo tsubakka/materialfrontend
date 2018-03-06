@@ -14,7 +14,11 @@ import {
     MatAutocompleteModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatRadioModule
 } from '@angular/material';
 
 
@@ -31,7 +35,11 @@ import {
         MatSidenavModule,
         MatAutocompleteModule,
         MatToolbarModule,
-        MatGridListModule
+        MatGridListModule,
+        MatExpansionModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatRadioModule,
     ],
     exports: [
         MatButtonModule,
@@ -43,7 +51,12 @@ import {
         MatAutocompleteModule,
         MatToolbarModule,
         MatCardModule,
-        MatGridListModule
+        MatGridListModule,
+        MatExpansionModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatRadioModule,
+
     ],
 })
 

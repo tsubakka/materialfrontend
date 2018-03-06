@@ -2,7 +2,7 @@ export const navigation = [
   {
     name: 'Dashboard',
     url: '/dashboard',
-    icon: 'icon-speedometer',
+    icon: 'home',
     badge: {
       variant: 'info',
       text: 'NEW'
@@ -15,88 +15,88 @@ export const navigation = [
   {
     name: 'Users',
     url: '/admin/users',
-    icon: 'icon-user',
+    icon: 'person',
     children: [
       {
         name: 'User Manager',
         url: '/admin/usermanager',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'Add User',
         url: '/admin/adduser',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'User Language',
         url: '/admin/userlang',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'User Skills',
         url: '/admin/userskill',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'User Email',
         url: '/admin/useremil',
-        icon: 'icon-user'
+        icon: 'person'
       }
     ]
   },
   {
     name: 'Roles',
     url: '/admin/roles',
-    icon: 'icon-user',
+    icon: 'person',
     children: [
       {
         name: 'Role Manager',
         url: '/admin/rolemanager',
-        icon: 'icon-user'
+        icon: 'person'
       }
     ]
   },
   {
     name: 'Menu',
     url: '/admin/menu',
-    icon: 'icon-user',
+    icon: 'person',
     children: [
       {
         name: 'Menu Manager',
         url: '/admin/menumanager',
-        icon: 'icon-user'
+        icon: 'person'
       }
     ]
   },
   {
     name: 'Master Tables',
     url: '/admin/mastertables',
-    icon: 'icon-user',
+    icon: 'person',
     children: [
       {
         name: 'Gender',
         url: '/admin/genders',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'Language',
         url: '/admin/languages',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'Address type',
         url: '/admin/addresstypes',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'Country',
         url: '/admin/countries',
-        icon: 'icon-user'
+        icon: 'person'
       },
       {
         name: 'State',
         url: '/admin/states',
-        icon: 'icon-user'
+        icon: 'person'
       }
     ]
   },
@@ -107,12 +107,12 @@ export const navigation = [
   {
     name: 'Colors',
     url: '/theme/colors',
-    icon: 'icon-drop'
+    icon: 'drop'
   },
   {
     name: 'Typography',
     url: '/theme/typography',
-    icon: 'icon-pencil'
+    icon: 'pencil'
   },
   {
     title: true,
@@ -121,101 +121,101 @@ export const navigation = [
   {
     name: 'Base',
     url: '/base',
-    icon: 'icon-puzzle',
+    icon: 'puzzle',
     children: [
       {
         name: 'Cards',
         url: '/base/cards',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Carousels',
         url: '/base/carousels',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Collapses',
         url: '/base/collapses',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Forms',
         url: '/base/forms',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Pagination',
         url: '/base/paginations',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Popovers',
         url: '/base/popovers',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Progress',
         url: '/base/progress',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Switches',
         url: '/base/switches',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Tables',
         url: '/base/tables',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Tabs',
         url: '/base/tabs',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       },
       {
         name: 'Tooltips',
         url: '/base/tooltips',
-        icon: 'icon-puzzle'
+        icon: 'puzzle'
       }
     ]
   },
   {
     name: 'Buttons',
     url: '/buttons',
-    icon: 'icon-cursor',
+    icon: 'cursor',
     children: [
       {
         name: 'Buttons',
         url: '/buttons/buttons',
-        icon: 'icon-cursor'
+        icon: 'cursor'
       },
       {
         name: 'Dropdowns',
         url: '/buttons/dropdowns',
-        icon: 'icon-cursor'
+        icon: 'cursor'
       },
       {
         name: 'Social Buttons',
         url: '/buttons/social-buttons',
-        icon: 'icon-cursor'
+        icon: 'cursor'
       }
     ]
   },
   {
     name: 'Charts',
     url: '/charts',
-    icon: 'icon-pie-chart'
+    icon: 'insert_chart'
   },
   {
     name: 'Icons',
     url: '/icons',
-    icon: 'icon-star',
+    icon: 'star',
     children: [
       {
         name: 'Flags',
         url: '/icons/flags',
-        icon: 'icon-star',
+        icon: 'star',
         badge: {
           variant: 'success',
           text: 'NEW'
@@ -224,7 +224,7 @@ export const navigation = [
       {
         name: 'Font Awesome',
         url: '/icons/font-awesome',
-        icon: 'icon-star',
+        icon: 'star',
         badge: {
           variant: 'secondary',
           text: '4.7'
@@ -233,36 +233,36 @@ export const navigation = [
       {
         name: 'Simple Line Icons',
         url: '/icons/simple-line-icons',
-        icon: 'icon-star'
+        icon: 'star'
       }
     ]
   },
   {
     name: 'Notifications',
     url: '/notifications',
-    icon: 'icon-bell',
+    icon: 'bell',
     children: [
       {
         name: 'Toastr',
         url: '/notifications/toastr',
-        icon: 'icon-bell'
+        icon: 'bell'
       },
       {
         name: 'Alerts',
         url: '/notifications/alerts',
-        icon: 'icon-bell'
+        icon: 'bell'
       },
       {
         name: 'Modals',
         url: '/notifications/modals',
-        icon: 'icon-bell'
+        icon: 'bell'
       }
     ]
   },
   {
     name: 'Widgets',
     url: '/widgets',
-    icon: 'icon-calculator',
+    icon: 'calculator',
     badge: {
       variant: 'info',
       text: 'NEW'
@@ -278,41 +278,41 @@ export const navigation = [
   {
     name: 'Pages',
     url: '/pages',
-    icon: 'icon-star',
+    icon: 'star',
     children: [
       {
         name: 'Login',
         url: '/pages/login',
-        icon: 'icon-star'
+        icon: 'star'
       },
       {
         name: 'Register',
         url: '/pages/register',
-        icon: 'icon-star'
+        icon: 'star'
       },
       {
         name: 'Error 404',
         url: '/pages/404',
-        icon: 'icon-star'
+        icon: 'star'
       },
       {
         name: 'Error 500',
         url: '/pages/500',
-        icon: 'icon-star'
+        icon: 'star'
       }
     ]
   },
   {
     name: 'Download CoreUI',
     url: 'http://coreui.io/angular/',
-    icon: 'icon-cloud-download',
+    icon: 'cloud-download',
     class: 'mt-auto',
     variant: 'success'
   },
   {
     name: 'Try CoreUI PRO',
     url: 'http://coreui.io/pro/angular/',
-    icon: 'icon-layers',
+    icon: 'layers',
     variant: 'danger'
   }
 ];
