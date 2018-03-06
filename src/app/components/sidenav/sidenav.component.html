@@ -79,29 +79,36 @@
 <ng-template ngFor let-navitem [ngForOf]="navigation">
         <mat-accordion [displayMode]="'flat'" [multi]="false" class="sidenav-mat-expansion">
                 <ng-template [ngIf]="isTitle(navitem)">
-                        <mat-expansion-panel  disabled="disabled" style="border:0; box-shadow:none;">
+                        <mat-expansion-panel disabled="disabled" style="border:0; box-shadow:0">
                                 <mat-expansion-panel-header style="border:0">{{navitem.name}}</mat-expansion-panel-header>
 
                         </mat-expansion-panel>
                 </ng-template>
                 <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)&&hasChildren(navitem)" style="padding:0;margin:0;">
-                        <mat-expansion-panel style="border:0; box-shadow:none;">
-                                <mat-expansion-panel-header><mat-icon >{{navitem.icon}}</mat-icon>{{navitem.name}}</mat-expansion-panel-header>
+                        <mat-expansion-panel style="border:0; box-shadow:0;">
+                                <mat-expansion-panel-header>
+                                        <mat-icon>{{navitem.icon}}</mat-icon>{{navitem.name}}</mat-expansion-panel-header>
                                 <ng-template style="padding:0;margin:0;" ngFor let-navchild [ngForOf]="navitem.children">
-                                        <p><a href [routerLink]="[navchild.url]" ><mat-icon>{{navchild.icon}}</mat-icon>{{navchild.name}}</a></p>
+                                        <p>
+                                                <a class="sidenav-link" href [routerLink]="[navchild.url]">
+                                                        <mat-icon>{{navchild.icon}}</mat-icon>{{navchild.name}}</a>
+                                        </p>
                                 </ng-template>
                                 <!--</p>-->
                         </mat-expansion-panel>
 
                 </ng-template>
                 <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)&&!hasChildren(navitem)" style="padding:0;margin:0;">
-                                <mat-expansion-panel disabled="disabled" style="border:0; box-shadow:none;">
-                                        <mat-expansion-panel-header><a href [routerLink]="[navitem.url]" ><mat-icon>{{navitem.icon}}</mat-icon>{{navitem.name}}</a></mat-expansion-panel-header>
-                                        
-                                        <!--</p>-->
-                                </mat-expansion-panel>
-        
-                        </ng-template>
+                        <mat-expansion-panel disabled="disabled" style="border:0; box-shadow:0;">
+                                <mat-expansion-panel-header>
+                                        <a  href [routerLink]="[navitem.url]">
+                                                <mat-icon style="margin-top:6px;">{{navitem.icon}}</mat-icon><label style="margin-top:-20px !important;">{{navitem.name}}</label></a>
+                                </mat-expansion-panel-header>
+
+                                <!--</p>-->
+                        </mat-expansion-panel>
+
+                </ng-template>
         </mat-accordion>
 </ng-template>
 

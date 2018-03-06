@@ -107,12 +107,12 @@ export const navigation = [
   {
     name: 'Colors',
     url: '/theme/colors',
-    icon: 'drop'
+    icon: 'person'
   },
   {
     name: 'Typography',
     url: '/theme/typography',
-    icon: 'pencil'
+    icon: 'person'
   },
   {
     title: true,
@@ -121,84 +121,84 @@ export const navigation = [
   {
     name: 'Base',
     url: '/base',
-    icon: 'puzzle',
+    icon: 'class',
     children: [
       {
         name: 'Cards',
         url: '/base/cards',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Carousels',
         url: '/base/carousels',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Collapses',
         url: '/base/collapses',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Forms',
         url: '/base/forms',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Pagination',
         url: '/base/paginations',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Popovers',
         url: '/base/popovers',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Progress',
         url: '/base/progress',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Switches',
         url: '/base/switches',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Tables',
         url: '/base/tables',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Tabs',
         url: '/base/tabs',
-        icon: 'puzzle'
+        icon: 'class'
       },
       {
         name: 'Tooltips',
         url: '/base/tooltips',
-        icon: 'puzzle'
+        icon: 'class'
       }
     ]
   },
   {
     name: 'Buttons',
     url: '/buttons',
-    icon: 'cursor',
+    icon: 'event',
     children: [
       {
         name: 'Buttons',
         url: '/buttons/buttons',
-        icon: 'cursor'
+        icon: 'event'
       },
       {
         name: 'Dropdowns',
         url: '/buttons/dropdowns',
-        icon: 'cursor'
+        icon: 'event'
       },
       {
         name: 'Social Buttons',
         url: '/buttons/social-buttons',
-        icon: 'cursor'
+        icon: 'event'
       }
     ]
   },
@@ -240,29 +240,29 @@ export const navigation = [
   {
     name: 'Notifications',
     url: '/notifications',
-    icon: 'bell',
+    icon: 'launch',
     children: [
       {
         name: 'Toastr',
         url: '/notifications/toastr',
-        icon: 'bell'
+        icon: 'launch'
       },
       {
         name: 'Alerts',
         url: '/notifications/alerts',
-        icon: 'bell'
+        icon: 'launch'
       },
       {
         name: 'Modals',
         url: '/notifications/modals',
-        icon: 'bell'
+        icon: 'launch'
       }
     ]
   },
   {
     name: 'Widgets',
     url: '/widgets',
-    icon: 'calculator',
+    icon: 'http',
     badge: {
       variant: 'info',
       text: 'NEW'
@@ -301,18 +301,5 @@ export const navigation = [
         icon: 'star'
       }
     ]
-  },
-  {
-    name: 'Download CoreUI',
-    url: 'http://coreui.io/angular/',
-    icon: 'cloud-download',
-    class: 'mt-auto',
-    variant: 'success'
-  },
-  {
-    name: 'Try CoreUI PRO',
-    url: 'http://coreui.io/pro/angular/',
-    icon: 'layers',
-    variant: 'danger'
   }
 ];
