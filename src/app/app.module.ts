@@ -1,3 +1,4 @@
+import { ButtonsModule } from './views/buttons/buttons.module';
 
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
@@ -7,7 +8,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { ButtonsComponent } from './views/buttons/buttons/buttons.component';
 import { GridListDemoComponent } from './views/grid-list/grid-list-demo';
 
 import { AppRoutingModule } from './app.routing';
@@ -28,8 +28,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonsComponent,
-
     SidenavComponent,
     AppSidebarNavTitleComponent,
     AppSidebarNavItemComponent,
@@ -41,12 +39,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
   ],
   imports: [
+    ButtonsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
     AppRoutingModule,
-   // DashboardModule
+
+    // DashboardModule
 
 
   ],
