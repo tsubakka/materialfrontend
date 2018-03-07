@@ -1,0 +1,22 @@
+.app-perfect-scrollbar{
+    height:calc(100vh - 115px);
+}
+
+
+.sidenav-link {
+  
+   width:130%;
+   margin-left:-25px;
+}
+
+
+.mat-expansion-panel-header {
+&:focus,
+  &:hover {
+    outline: none;
+    background-color:red !important;
+  }
+
+  
+        
+  }

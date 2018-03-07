@@ -1,18 +1,19 @@
-
-<app-navbar (toggl)="onToggle($event)"></app-navbar>
+<app-navbar (toggl)="onToggle($event)">
+</app-navbar>
 
 <mat-drawer-container class="app-container" autosize>
-  <mat-drawer #sidenav class="app-sidenav mat-elevation-z5" [ngClass]="sidenavMini?'app-sidenav-mini':'app-sidenav-normal'" mode="side" opened="true">
+  <mat-drawer #sidenav class="app-sidenav mat-elevation-z5" [ngClass]="sidenavMini?'app-sidenav-mini':'app-sidenav-normal'"
+    mode="side" opened="true">
     <app-sidenav></app-sidenav>
-   <!-- <div class="sidenav-footer">
+    <div class="sidenav-footer">
       <div class="sidenav-footer-btn">
         <a mat-icon-button (click)="sidenavMini = !sidenavMini">
           <mat-icon class="example-icon">swap_horiz</mat-icon>
         </a>
       </div>
-    </div>-->
+    </div>
   </mat-drawer>
- <!-- <app-grid-list-demo></app-grid-list-demo>
+  <!-- <app-grid-list-demo></app-grid-list-demo>
   <app-buttons></app-buttons>-->
   <router-outlet></router-outlet>
 </mat-drawer-container>

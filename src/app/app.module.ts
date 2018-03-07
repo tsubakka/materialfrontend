@@ -25,6 +25,15 @@ import {
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+
+const PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+
+};
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +54,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MaterialModule,
     FormsModule,
     AppRoutingModule,
+    PerfectScrollbarModule, // .forRoot(PERFECT_SCROLLBAR_CONFIG),
+
 
     // DashboardModule
 
