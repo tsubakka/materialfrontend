@@ -6,11 +6,13 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';*/
 
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
+import { MaterialModule } from '../../material.module';
 
 @NgModule({
   imports: [
     FormsModule,
     DashboardRoutingModule,
+    MaterialModule
   //  ChartsModule,
   //  BsDropdownModule,
   //  ButtonsModule.forRoot()

@@ -1,18 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
+// material prebuilt theme
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
-@import "~scss/ps.scss";
-// perfect scrollbar
 
+// perfect scrollbar
+@import "~scss/perfect-scrollbar.scss";
+
+// material custom theme
+@import "~scss/theme.scss";
 
 body{
     margin:0;
     padding:0;
 }
 
-
 .app-perfect-scrollbar .ps{
     .ps__rail-x {
         display: none !important;
     }
 }
+
+
+.active-link{
+    background-color: #607d8b;
+    color:white !important;
+    width:210px !important;
+    margin-left:10px !important;
+  }
+  

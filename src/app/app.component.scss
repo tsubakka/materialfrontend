@@ -12,8 +12,19 @@
     padding-top:65px !important;   
     height:calc(100vh-65px);
     overflow-x:hidden;
-    
 }
+.app-sidenav::after {
+    content: "";
+    background: url("./../assets/sidebar/sidebar-bg-2.png"); 
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
 .app-sidenav-normal{
     width:230px;
 }
@@ -32,6 +43,4 @@
     margin:5px;
     margin-right:13px
 }
-
-
 

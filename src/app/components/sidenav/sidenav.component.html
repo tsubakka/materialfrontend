@@ -13,7 +13,7 @@
                                                 </mat-expansion-panel-header>
 
                                         </mat-expansion-panel>-->
-                                        <div style=height:30px;font-size:16px;color:lightgray;padding-left:27px;padding-top:12px;>
+                                        <div style=height:30px;font-size:16px;color:gray;padding-left:27px;padding-top:22px;>
                                                         {{navitem.name}}
                                         </div>
                                 </ng-template>
@@ -33,7 +33,7 @@
                                                                
                                                         </mat-expansion-panel-header>
                                                 <ng-template style="padding:0;margin:0;" ngFor let-navchild [ngForOf]="navitem.children">
-                                                        <a mat-button color="warn" class="sidenav-link" href [routerLink]="[navchild.url]">
+                                                        <a mat-button class="sidenav-link" href [routerLink]="[navchild.url]" [routerLinkActive]="['active-link']">
                                                                 <div style="float:left; margin-top:10px;margin-left:15px;">
 
                                                                         <mat-icon>{{navchild.icon}}</mat-icon>
@@ -46,9 +46,10 @@
                                         </mat-expansion-panel>
                                 </ng-template>
                                 <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)&&!hasChildren(navitem)" style="padding:0;margin:0;">
-                                        <mat-expansion-panel disabled style="box-shadow:none;">
-                                                <mat-expansion-panel-header style="padding:0; margin:0;border:0; box-shadow:none;">
-                                                        <a mat-button color="accent" class="sidenav-link" href [routerLink]="[navitem.url]">
+                                     <!--   <mat-expansion-panel disabled style="box-shadow:none;">
+                                                <mat-expansion-panel-header style="padding:0; margin:0;border:0; box-shadow:none;"> -->
+                                                                <div style="height:40px;font-size:16px;"> <!--color:gray;padding-left:27px;padding-top:12px;>     -->
+                                                        <a mat-button  class="sidenav-link" href [routerLink]="[navitem.url]" [routerLinkActive]="['active-link']">
                                                                 <div style="float:left; margin-top:10px;margin-left:32px;">
                                                                         <mat-icon>{{navitem.icon}}</mat-icon>
                                                                 </div>
@@ -56,8 +57,10 @@
                                                                         {{navitem.name}}
                                                                 </div>
                                                         </a>
-                                                </mat-expansion-panel-header>
-                                        </mat-expansion-panel>
+                                                <!--</mat-expansion-panel-header>
+                                        </mat-expansion-panel>-->
+                                        </div>
+
                                 </ng-template>
                         </ng-template>
                 </mat-accordion>

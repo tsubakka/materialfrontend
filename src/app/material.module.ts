@@ -1,5 +1,4 @@
 
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +17,8 @@ import {
     MatExpansionModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatRadioModule
+    MatRadioModule,
+  
 } from '@angular/material';
 
 
@@ -40,6 +40,7 @@ import {
         MatSliderModule,
         MatSlideToggleModule,
         MatRadioModule,
+        MatCardModule,
     ],
     exports: [
         MatButtonModule,
@@ -56,6 +57,7 @@ import {
         MatSliderModule,
         MatSlideToggleModule,
         MatRadioModule,
+        MatCardModule,
 
     ],
 })
