@@ -8,9 +8,57 @@ export const navigation = [
       text: 'NEW'
     }
   },
+
+
+  {
+    title: true,
+    name: 'Components'
+  },
+  {
+    divider: true
+  },
+  {
+    name: 'Material UI',
+    url: '/components',
+    icon: 'class',
+    children: [
+      {
+        name: 'Cards',
+        url: '/base/cards',
+        icon: 'class'
+      },
+    ]
+  },
+  {
+    name: 'Bootstrap',
+    url: '/components',
+    icon: 'class',
+    children: [
+      {
+        name: 'Cards',
+        url: '/base/cards',
+        icon: 'class'
+      },
+    ]
+  },
+  {
+    name: 'Third-party',
+    url: '/components',
+    icon: 'class',
+    children: [
+      {
+        name: 'Cards',
+        url: '/base/cards',
+        icon: 'class'
+      },
+    ]
+  },
   {
     title: true,
     name: 'Admin'
+  },
+  {
+    divider: true
   },
   {
     name: 'Users',

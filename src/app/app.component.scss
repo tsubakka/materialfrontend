@@ -13,6 +13,12 @@
     height:calc(100vh-65px);
     overflow-x:hidden;
 }
+@media only screen and (max-width: 600px) {
+    .app-sidenav{
+        padding-top:56px !important;  
+    }
+}
+
 .app-sidenav::after {
     content: "";
     background: url("./../assets/sidebar/sidebar-bg-2.png"); 
