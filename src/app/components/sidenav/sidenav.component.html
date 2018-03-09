@@ -33,8 +33,8 @@
                                                                
                                                         </mat-expansion-panel-header>
                                                 <ng-template style="padding:0;margin:0;" ngFor let-navchild [ngForOf]="navitem.children">
-                                                        <a mat-button class="sidenav-link" href [routerLink]="[navchild.url]" [routerLinkActive]="['active-link']">
-                                                                <div style="float:left; margin-top:10px;margin-left:15px;">
+                                                        <a mat-button class="sidenav-child-link" href [routerLink]="[navchild.url]" [routerLinkActive]="['active-child-link','mat-elevation-z5']">
+                                                                <div style="float:left; margin-top:10px;">
 
                                                                         <mat-icon>{{navchild.icon}}</mat-icon>
                                                                 </div>
@@ -49,8 +49,8 @@
                                      <!--   <mat-expansion-panel disabled style="box-shadow:none;">
                                                 <mat-expansion-panel-header style="padding:0; margin:0;border:0; box-shadow:none;"> -->
                                                                 <div style="height:40px;font-size:16px;"> <!--color:gray;padding-left:27px;padding-top:12px;>     -->
-                                                        <a mat-button  class="sidenav-link" href [routerLink]="[navitem.url]" [routerLinkActive]="['active-link']">
-                                                                <div style="float:left; margin-top:10px;margin-left:32px;">
+                                                        <a mat-button  class="sidenav-link" href [routerLink]="[navitem.url]" [routerLinkActive]="['active-link','mat-elevation-z5']">
+                                                                <div style="float:left; margin-top:10px;">
                                                                         <mat-icon>{{navitem.icon}}</mat-icon>
                                                                 </div>
                                                                 <div style="float:left; margin-top:5px; margin-left:5px;">
