@@ -2,8 +2,13 @@
 <div class="app-perfect-scrollbar">
         <perfect-scrollbar class="container" [config]="config" [usePSClass]="true">
                         <div class="app-sidebar-header">
-        
+                                <div class="profile-img" > 
+                                        <img alt="user" src="/assets/images/users/profile.png"> 
                                 </div>
+                                <div class="profile-text">
+                                        Anonymus Doe 
+                                </div>
+                        </div>
                 <mat-accordion [displayMode]="'flat'" [multi]="false" class="sidenav-mat-expansion">
                         <ng-template ngFor let-navitem [ngForOf]="navigation">
                                 <ng-template [ngIf]="isTitle(navitem)">
