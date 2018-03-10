@@ -1,4 +1,8 @@
-<div class="app-perfect-scrollbar">
+<mat-toolbar class="app-sidenav-navbar mat-elevation-z1">
+        <img src="/assets/navbar/logo4.svg" class="header-logo">
+</mat-toolbar>
+
+<div class="app-perfect-scrollbar pd-t-56" >
         <perfect-scrollbar class="container" [config]="config" [usePSClass]="true">
                 <div class="app-sidebar-header">
                         <div class="profile-img">
@@ -23,7 +27,7 @@
                                 </ng-template>
                                 <ng-template [ngIf]="isDivider(navitem)">
                                         <hr class="divider">
-                               </ng-template>
+                                </ng-template>
                                 <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)&&hasChildren(navitem)" style="padding:0;margin:0;">
                                         <mat-expansion-panel style="border:0; box-shadow:none;">
                                                 <!-- <mat-expansion-panel-header>

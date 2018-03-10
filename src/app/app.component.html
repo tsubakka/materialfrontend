@@ -1,5 +1,4 @@
-<app-navbar (toggl)="onToggle($event)">
-</app-navbar>
+
 
 <mat-drawer-container class="app-container" autosize>
   <mat-drawer #sidenav class="app-sidenav mat-elevation-z5" [ngClass]="sidenavMini?'app-sidenav-mini':'app-sidenav-normal'"
@@ -13,7 +12,11 @@
       </div>
     </div> -->
   </mat-drawer>
+  <app-navbar (toggl)="onToggle($event)">
+  </app-navbar>
   <!-- <app-grid-list-demo></app-grid-list-demo>
   <app-buttons></app-buttons>-->
+  <div  class="pd-t-76 mg-l-20 mg-r-20">
   <router-outlet></router-outlet>
+</div>
 </mat-drawer-container>
